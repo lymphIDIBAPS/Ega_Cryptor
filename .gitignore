@@ -1,0 +1,14 @@
+# Directory of snakemake utils
+.snakemake/
+
+# PDFs representing the DAG and Rulegraph of the pipeline
+*.pdf
+
+# Reports
+workflow/report
+
+# Any files
+*.fastq
+*.fq
+*.gz
+*.txt

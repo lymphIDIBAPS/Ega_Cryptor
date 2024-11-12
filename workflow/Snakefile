@@ -1,0 +1,17 @@
+#### Snakefile for Ega-Cryptor Application ####
+
+configfile: "config/configfile.yaml"
+
+include: "rules/ega_cryptor.smk"
+
+input_path = config["input"]
+output_path = config["output"]
+ega_cryptor_path = config["path_to_ega"]
+
+rule all:
+    input:
+        "finished.txt"
+    shell:
+        """
+        echo "I just run subrules!"
+        """ 

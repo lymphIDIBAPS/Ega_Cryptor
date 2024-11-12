@@ -1,0 +1,10 @@
+#### Configuration File for Ega-Cryptor Application ####
+
+# Define the path to the .jar application of Ega-Cryptor:
+path_to_ega: "~/Descargas/EgaCryptor/EGA-Cryptor-2.0.0/ega-cryptor-2.0.0.jar"
+
+# Define the directory containing the files to encrypt:
+input: "/home/oscar/Documentos/RNA-Seq_Sample_Files/single_end/"
+
+# Define the directory to output the encripted files:
+output: "/home/oscar/Documentos/RNA-Seq_Sample_Files/single_end/encripted"
