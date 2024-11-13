@@ -1,9 +1,12 @@
 #### Snakefile for Ega-Cryptor Application ####
 
+# Load Configuration File
 configfile: "config/configfile.yaml"
 
+# Load rules
 include: "rules/ega_cryptor.smk"
 
+# Get values from configuration file
 input_path = config["input"]
 output_path = config["output"]
 ega_cryptor_path = config["path_to_ega"]

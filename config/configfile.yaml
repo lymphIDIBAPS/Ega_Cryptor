@@ -8,3 +8,6 @@ input: "/home/oscar/Documentos/RNA-Seq_Sample_Files/single_end/"
 
 # Define the directory to output the encripted files:
 output: "/home/oscar/Documentos/RNA-Seq_Sample_Files/single_end/encripted"
+
+# Define the resource use of the application; options = (full,medium,low)
+resources: "medium"
