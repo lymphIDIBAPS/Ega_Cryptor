@@ -13,7 +13,7 @@ ega_cryptor_path = config["path_to_ega"]
 
 rule all:
     input:
-        "finished.txt"
+        finish_file = (f'{output_path}/finished.txt')
     shell:
         """
         echo "I just run subrules!"

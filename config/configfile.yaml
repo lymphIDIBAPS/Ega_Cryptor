@@ -10,4 +10,4 @@ input: "/home/oscar/Documentos/RNA-Seq_Sample_Files/single_end/"
 output: "/home/oscar/Documentos/RNA-Seq_Sample_Files/single_end/encripted"
 
 # Define the resource use of the application; options = (full,medium,low)
-resources: "medium"
+resources: "full"

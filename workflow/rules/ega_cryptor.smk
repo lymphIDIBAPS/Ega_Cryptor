@@ -1,7 +1,10 @@
-# Snakemake file
+#### Snakemake Ega-Cryptor ####
 
 # Load Configuration File
 configfile: "config/configfile.yaml"
+
+# Get values from configuration file
+output_path = config["output"]
 
 # Set the resources flag
 def set_resource_value():
@@ -13,18 +16,22 @@ def set_resource_value():
     elif flag == "low":
         return "l"  # Value for low
     else:
-        raise ValueError("Invalid resources value in config file")
+        raise ValueError(f"Invalid resources value in config file: {flag}")
 
 rule ega_cryptor:
     output:
-        test = "finished.txt",
+        test = (f'{output_path}/finished.txt'),
         # md5= "",
         # gpg= "",
         # gpg_md5= "",
     params:
         resource_flag = set_resource_value()
+    conda:
+        "../envs/ega_cryptor.yaml"
     shell: 
         """
-        echo java -jar {ega_cryptor_path} {input_path} {output_path} -{params.resource_flag}
+        mkdir -p {output_path}
+        java -jar {ega_cryptor_path} -i {input_path} -o {output_path} -{params.resource_flag}
         touch {output.test}
         """
+# echo java -jar {ega_cryptor_path} {input_path} {output_path} -{params.resource_flag}
