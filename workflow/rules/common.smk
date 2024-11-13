@@ -1,5 +1,6 @@
 #### Common Functions for Ega-Cryptor Application ####
 
+
 # Set the resources flag
 def set_resource_value():
     flag = config["resources"]
@@ -8,6 +9,6 @@ def set_resource_value():
     elif flag == "medium":
         return "m"
     elif flag == "low":
-        return "l"  
+        return "l"
     else:
         raise ValueError(f"Invalid resources value in config file: {flag}")

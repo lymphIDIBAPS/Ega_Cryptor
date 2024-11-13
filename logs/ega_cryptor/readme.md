@@ -1,0 +1,1 @@
+This directory is where the logs from rule "ega_cryptor" will be saved

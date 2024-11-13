@@ -4,8 +4,8 @@
 # PDFs representing the DAG and Rulegraph of the pipeline
 *.pdf
 
-# Reports
-workflow/report
+# Logs
+*.log
 
 # Any files
 *.fastq
