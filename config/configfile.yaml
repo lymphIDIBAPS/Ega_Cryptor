@@ -1,13 +1,13 @@
 #### Configuration File for Ega-Cryptor Application ####
 
 # Define the path to the .jar application of Ega-Cryptor:
-path_to_ega: /home/oscar/slgpfs/projects/cli79/reference_data_and_pipelines/programs/EGA-Cryptor-2.0.0/ega-cryptor-2.0.0.jar"
+path_to_ega: "/slgpfs/projects/cli79/reference_data_and_pipelines/programs/EGA-Cryptor-2.0.0/ega-cryptor-2.0.0.jar"
 
 # Define the directory containing the files to encrypt:
-input: "/home/oscar/slgpfs/projects/cli84/FASTQ/EGA"
+input: "/slgpfs/projects/cli84/FASTQ/EGA"
 
 # Define the directory to output the encripted files:
-output: "/home/oscar/slgpfs/projects/cli84/FASTQ/EGA/encripted"
+output: "/slgpfs/projects/rcli/FASTQ/EGA/encripted"
 
 # Define the resource use of the application; options = (full,medium,low)
 resources: "full"
