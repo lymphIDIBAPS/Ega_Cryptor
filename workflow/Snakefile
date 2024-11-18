@@ -17,10 +17,12 @@ include: "rules/ega_cryptor.smk"
 
 rule all:
     input:
-        finish_file=(f"{output_path}/finished.txt")
+        finish_file=(f"{output_path}/finished.txt"),
     log:
-        error = "logs/all/error.log",
-        stdr = "logs/all/stdr.log"
+        error="logs/all/error.log",
+        stdr="logs/all/stdr.log",
+    conda:
+        "../envs/all.yaml"
     shell:
         """
         echo "I just run subrules!" > {log.stdr} 2> {log.error}

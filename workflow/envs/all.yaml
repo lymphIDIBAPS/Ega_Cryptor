@@ -1,4 +1,4 @@
 channels:
   - conda-forge
 dependencies:
-  - openjdk = 22.0.1
+  - bash = 5.1.16
