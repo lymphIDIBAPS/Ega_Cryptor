@@ -14,7 +14,7 @@ The workflow will output three files per input file:
 
 The EGACryptor v.2.0.0 is a JAVA-based application which enables submitters to produce EGA compliant encrypted files along with files for the encrypted and unencrypted md5sum for each file to be submitted. The application will generate an output folder that will by default mirror the directory structure containing the original files. This output folder can subsequently be uploaded to the EGA FTP staging area via an FTP or Aspera client.
 
-The link to the GitHub repository of Ega-Cryptor is [located here](https://github.com/EbiEga/ega-cryptor), and the Ega website with information about the application is [located here](https://ega-archive.org/submission/data/file-preparation/egacryptor/).
+The link to the GitHub repository of Ega-Cryptor is [available here](https://github.com/EbiEga/ega-cryptor), and the Ega website with information about the application is [available here](https://ega-archive.org/submission/data/file-preparation/egacryptor/).
 
 # Table of Contents
 1. [Installation](#installation)
